@@ -1,0 +1,46 @@
+//COLORS
+$color-light: #bdbdbd;
+
+$color-brighter-grey: #706f6f;
+
+$color-darker-grey: #4c4d4d;
+
+$color-brighter: #1d1d25f8;
+
+$color-darker: #1b1b20f8;
+
+$color-darkest: #353434;
+
+$heading-color: #e68b03;
+
+$heading-color-2: #df9b09;
+
+$text-color: #f5efef;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;    //the best way of setting it up --> set it up to 16px and calculate it to %
+    //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: $color-brighter;
+    font-weight: 500;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 15vh 90vh 10vh min-content 10vh;
+    grid-template-columns: [whole-start] minmax(.5rem, 1fr) [middle-start] repeat(8, minmax(min-content, 19rem)) [middle-end] minmax(.5rem, 1fr) [whole-end];
+    grid-row-gap: 4rem; 
+}

@@ -1,0 +1,29 @@
+.footer {
+    background-color: $color-darker;
+    grid-column: whole-start / whole-end;
+
+}
+
+.items {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+
+    &__copyright {
+    color: $heading-color;
+    font-size: 1.5rem;
+  } 
+
+    &__mail {
+    height: 3rem;
+    padding-left: 1rem;
+    text-decoration: none;
+  }
+}
+
+
+span {
+    color: #ff0000;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pimped",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map sass/general.scss css/style.css"
+  },
+  "author": "Adriana",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
+}

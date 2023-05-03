@@ -1,0 +1,206 @@
+.descriptions {
+    grid-column: middle-start / middle-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+
+    @media only screen and (max-width: 1000px) {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-row-gap: 5rem;
+      }
+}
+
+.card:hover {
+    transform: translateY(2rem);
+}
+
+
+
+.card {
+    transition: transform .5s;
+    border-radius: 2rem;
+    background-color: $color-brighter-grey;   //in case of problems wiht loading
+
+    
+
+    &__picture {
+        height: 100%;
+        border-radius: 2rem;
+        background-size: cover;
+        
+       
+        
+
+        &--1 {
+            background-image: url(../img/digital-1742687_960_720.jpg);
+            
+            
+        }
+
+        &--2 {
+            background-image: linear-gradient(to left top, #02020c48, #0d0118c4), url(../img/dna-3539309_1280.jpg), ;
+        }
+        &--3 {
+            background-image: linear-gradient(to bottom, #212149bd, #0d40691f),url(../img/projects.jpg);
+        }
+    }
+
+
+    &__skill {
+            
+            display: flex;
+            justify-content: center;
+            align-content: space-around;
+            padding-top: 4.2rem;
+            height: 14rem;
+    
+        }
+
+        &__img-big {
+            height: 9rem;
+        }
+    
+
+        &__img-small {
+             height: 4rem;
+             padding: 0 1rem;
+        }
+
+
+    .meter {
+        align-items: center;
+        width: 72%;
+        background: $color-darker-grey;
+        border-radius: 2.3rem;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $color-darker-grey;
+        display: block;
+
+        &--html,
+        &--css,
+        &--sass,
+        &--js,
+        &--react,
+        &--git {
+            border-radius: 2.3rem;
+            background-color: $heading-color-2;
+            overflow: hidden;
+            
+        }
+
+        &--html {
+            width: 95%;
+        }
+ 
+        &--css {
+            width: 90%;
+        }
+
+        &--sass {
+            width: 90%;
+        }
+
+        &--js {
+            width: 85%;
+        }
+
+        &--react {
+            width: 30%;
+        }
+
+        &--git {
+            width: 90%;
+        }
+    }
+
+
+    @keyframes bar-animation {
+        0% {width: 0%;}
+        100% {width: 100%;}
+    }
+
+    &__title {
+        color: $heading-color;
+        text-align: center;
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+
+
+    &__list {
+
+        padding: 2rem;
+        text-align: center;
+        color: $heading-color-2;
+        
+        ul {
+            margin: 0 auto;
+            width: 70%;
+            font-weight: 500;
+            
+
+            li {
+                padding: 1.5rem;
+                font-size: 1.8rem;
+                font-weight: 900;
+            }
+        }
+
+        
+        .link {
+            font-size: 2rem;
+            color: $heading-color;
+            list-style: circle;
+        }
+
+        p {
+            font-size: 2rem;
+            letter-spacing: .1rem;
+            padding-top: 5.5rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            padding-top: 4rem;
+            color: $heading-color;
+            text-transform: uppercase;
+        }
+
+    }
+
+    #micro {
+        height: 16rem;
+        padding: 3rem;
+        display: block;
+        margin: 0 auto;
+        transition: all .5s ease;
+        
+    }
+
+    #micro:hover {
+        transform: scale(4); 
+    }
+
+    .certificates {
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        grid-gap: 2.7rem;
+
+
+        &__img-cert {
+            height: 7.5rem;
+            margin: 0 auto;
+            transition: all .5s ease-in-out;
+        }
+
+        &__img-cert:hover {
+            transform: scale(4.8);
+        }
+    }
+}
+
