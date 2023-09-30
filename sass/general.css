@@ -109,8 +109,9 @@ body {
   padding-top: 4.2rem;
   height: 14rem;
 }
-.card__img-big {
+.card__skill__img-big {
   height: 9rem;
+  padding: 1rem;
 }
 .card__img-small {
   height: 4rem;
@@ -145,7 +146,7 @@ body {
   width: 85%;
 }
 .card .meter--react {
-  width: 30%;
+  width: 80%;
 }
 .card .meter--git {
   width: 90%;
@@ -165,9 +166,12 @@ body {
   font-size: 3rem;
 }
 .card__list {
-  padding: 2rem;
+  margin: 2rem;
   text-align: center;
   color: #df9b09;
+}
+.card__list__p {
+  margin: 1.5rem;
 }
 .card__list ul {
   margin: 0 auto;

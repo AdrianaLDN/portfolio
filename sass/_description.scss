@@ -47,20 +47,19 @@
     }
 
 
-    &__skill {
-            
+    &__skill {  
             display: flex;
             justify-content: center;
             align-content: space-around;
             padding-top: 4.2rem;
             height: 14rem;
-    
-        }
 
-        &__img-big {
-            height: 9rem;
+            &__img-big {
+                height: 9rem;
+                padding: 1rem;
+            }
         }
-    
+     
 
         &__img-small {
              height: 4rem;
@@ -108,7 +107,7 @@
         }
 
         &--react {
-            width: 30%;
+            width: 80%;
         }
 
         &--git {
@@ -132,9 +131,13 @@
 
     &__list {
 
-        padding: 2rem;
+        margin: 2rem;
         text-align: center;
         color: $heading-color-2;
+
+        &__p {
+            margin: 1.5rem;
+        }
         
         ul {
             margin: 0 auto;
