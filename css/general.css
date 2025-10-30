@@ -209,7 +209,7 @@ body {
   transform: scale(4);
 }
 .card .certificates {
-  padding-top: 10rem;
+  padding-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   grid-gap: 2.7rem;
